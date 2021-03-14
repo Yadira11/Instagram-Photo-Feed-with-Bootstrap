@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<title>Instagram Photo Bootstrap</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80d424fc81.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80d424fc81.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <lable><i class="fab fa-instagram" style="font-size: 50px; padding: 10px;"></i></lable>
+                <a class="navbar-brand" href="#">Instagram</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-success" data-toggle="modal"
+                                    data-target="#myModal">Create a new post</button>
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <textarea class="form-control" id="complexExampleMessage"
+                                                    rows="3"></textarea>
+                                                <button type="button" class="btn btn-light"><i
+                                                        class="fas fa-camera-retro"></i></button>
+                                                <button type="button" class="btn btn-light"><i
+                                                        class="fas fa-map-marker-alt"></i></button>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light">Cancel</button>
+                                                <button type="button" class="btn btn-success">Publish</button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="padding: 10px;">
+
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true"><i class="fas fa-image"></i></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false"><i class="fas fa-images"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="d-flex justify-content-center">
+                    <img src="https://m.media-amazon.com/images/I/41NfV5xXhFL._AC_.jpg" class="rounded" alt="..."
+                        style="max-width: 450px; max-height: 450px; margin: 10px;">
+
+                    <img src="http://www.altavision.co/ckfinder/userfiles/images/sindrome-de-vision-de-ordenador.jpg"
+                        class="rounded-top" alt="..." style="max-width: 450px; max-height: 450px; margin: 10px;">
+
+                    <img
+                        src="https://p4.wallpaperbetter.com/wallpaper/534/851/664/footbridge-autumn-walkway-forest-wallpaper-preview.jpg" class="rounded-end"
+                        alt="..." style="max-width: 450px; max-height: 450px; margin: 10px;">
+                </div>
+               
+                <div class="d-flex justify-content-center">
+                    <img
+                        src="https://media.tenor.com/images/a59d99a81058d8626128d9712e2dd4ff/tenor.gif"
+                        class="rounded" alt="..."
+                        style="max-width: 450px; max-height: 450px; padding-top: 10px; margin: 10px;">
+
+                    <img
+                        src="https://static.vix.com/es/sites/default/files/m/matrix-codigo-gif.gif"
+                        class="rounded-top" alt="..."
+                        style="max-width: 450px; max-height: 450px; padding-top: 10px; margin: 10px;">
+
+                    <img
+                        src="https://gironandherjourney.files.wordpress.com/2016/09/nexus.gif?w=356"
+                        class="rounded-end" alt="..."
+                        style="max-width: 450px; max-height: 450px; padding-top: 10px; margin: 10px;">
+                </div>
+                
+                <div class="d-flex justify-content-center">
+                     <img
+                        src="https://c4.wallpaperflare.com/wallpaper/324/1005/197/arboles-bosque-milenarios-naturaleza-wallpaper-preview.jpg"
+                        class="rounded" alt="..."
+                        style="max-width: 450px; max-height: 450px; padding-top: 10px; margin: 10px;">
+
+                    <img
+                        src="https://www.govisitcostarica.co.cr/images/photos/full-sunset-papagayo-gulf-guanacaste.jpg"
+                        class="rounded-top" alt="..."
+                        style="max-width: 450px; max-height: 450px; padding-top: 10px; margin: 10px;">
+
+                    <img src="https://static1.abc.es/Media/201408/16/vaadhoo_maldivas--644x362.jpg" class="rounded-end"
+                        alt="..." style="max-width: 450px; max-height: 450px; padding-top: 10px; margin: 10px;">
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="d-flex justify-content-center" style="background: rgb(13, 103, 131);">
+                    <div class="card" style="max-width: 500px; margin-top: 30px; max-width: 500px;">
+                        <div class="d-flex justify-content-between">
+                            <h2 style="font-size: 20px; padding: 10px; ">My First Photo</h2>
+                            <p style="float: right; padding-right: 10px; padding-top: 10px;" class="text-muted">11/11
+                            </p>
+                        </div>
+                         <img
+                            src="https://m.media-amazon.com/images/I/41NfV5xXhFL._AC_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <!--LIKES--> <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Facebook_Thumb_icon.svg/1200px-Facebook_Thumb_icon.svg.png"
+                                style="max-width: 50px; max-height: 50px; padding-top: 1px; margin: 1px;" alt="50">
+                            <h2>22</h2>
+                            <p class="card-text">This is my First Photo pd of feed.this is a multi line comments for testing purpose. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <div class="d-flex justify-content-start muted">
+                                <i style="font-size: 20px;" class="far fa-heart muted"></i>
+                                <p class="text-muted" style="padding-left: 25px; margin-bottom: 5px;">comments...</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center" style="background: rgb(13, 103, 131);">
+                    <div class="card" style="max-width: 500px; margin-top: 30px; max-width: 500px;">
+                        <div class="d-flex justify-content-between">
+                            <h2 style="font-size: 20px; padding: 10px; ">Second Photo</h2>
+                            <p style="float: right; padding-right: 10px; padding-top: 10px;" class="text-muted">18/11
+                            </p>
+                        </div>
+                        <!--SEGUNDA IMAGEN--><img
+                            src="http://www.altavision.co/ckfinder/userfiles/images/sindrome-de-vision-de-ordenador.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Facebook_Thumb_icon.svg/1200px-Facebook_Thumb_icon.svg.png"
+                                style="max-width: 50px; max-height: 50px; padding-top: 1px; margin: 1px;" alt="50">
+                            <h2>49</h2>
+                            <p class="card-text">This is my Second Photo pd of feed.this is a multi line comments for testing purpose. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <div class="d-flex justify-content-start muted">
+                                <i style="font-size: 20px;" class="far fa-heart muted"></i>
+                                <p class="text-muted" style="padding-left: 25px; margin-bottom: 5px;">comments...</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center" style="background: rgb(13, 103, 131);">
+                    <div class="card" style="max-width: 500px; margin-top: 30px; max-width: 500px;">
+                        <div class="d-flex justify-content-between">
+                            <h2 style="font-size: 20px; padding: 10px; ">Third Photo</h2>
+                            <p style="float: right; padding-right: 10px; padding-top: 10px;" class="text-muted">27/11
+                            </p>
+                        </div>
+                        <!--TERCERA IMAGEN--><img
+                            src="https://p4.wallpaperbetter.com/wallpaper/534/851/664/footbridge-autumn-walkway-forest-wallpaper-preview.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Facebook_Thumb_icon.svg/1200px-Facebook_Thumb_icon.svg.png"
+                                style="max-width: 50px; max-height: 50px; padding-top: 1px; margin: 1px;" alt="50">
+                            <h2>15</h2>
+                            <p class="card-text">This is my Second Photo pd of feed.this is a multi line comments for testing purpose. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <div class="d-flex justify-content-start muted">
+                                <i style="font-size: 20px;" class="far fa-heart muted"></i>
+                                <p class="text-muted" style="padding-left: 25px; margin-bottom: 5px;">comments...</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
